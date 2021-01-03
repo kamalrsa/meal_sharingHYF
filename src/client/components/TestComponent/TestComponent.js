@@ -6,7 +6,7 @@ import "./testComponentStyle.css";
 
 export default function TestComponent() {
   const [data, setData] = useState("");
-  const fetchURL = "api/meals";
+  const fetchURL = "/meals";
   const getData = () => fetch(`${fetchURL}`).then((res) => res.json());
   useEffect(() => {
     getData().then((data) => setData(data));
