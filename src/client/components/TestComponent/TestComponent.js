@@ -14,7 +14,8 @@ export default function TestComponent() {
   return (
     <section className="test-component">
       <p>in a component</p>
-      {data?.map((e) => e.meals_name)}
+      <p> Name of Meals</p>
+      <div>{data?.map((e) => e.meals_name)}</div>
     </section>
   );
 }
