@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import TestComponent from "./components/TestComponent/TestComponent";
+import MealDisplay from "./components/TestComponent/MealDisplay";
 
 function App() {
   return (
@@ -13,6 +14,9 @@ function App() {
       </Route>
       <Route exact path="/test-component">
         <TestComponent></TestComponent>
+      </Route>
+      <Route exact path="/meal-display">
+        <MealDisplay></MealDisplay>
       </Route>
     </Router>
   );
