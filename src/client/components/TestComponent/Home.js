@@ -1,5 +1,6 @@
 import React from "react";
-//import img from "./../../assets/images/shrimp.jpg";
+import img from "./../../assets/images/hyf.png";
+//import logo from "./../assets/images/hyf.png";
 
 export default function Home() {
   return (
@@ -11,7 +12,7 @@ export default function Home() {
           about your meal. Enjoy here by adding your meal.
           <img src="/public/shrimp.png"></img>
         </p>
-        {/*  <img src={img}></img> */}
+        <img src={img}></img>
       </div>
       <div></div>
     </div>
