@@ -19,7 +19,7 @@ export function Reservation() {
 
   function onSubmit() {
     async function fetchReservation() {
-      await fetch("http://localhost:5000/api/reservation", {
+      await fetch("/api/reservation", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

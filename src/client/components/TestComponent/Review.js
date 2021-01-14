@@ -9,9 +9,9 @@ export function Review() {
   console.log(filterMeal);
   useEffect(() => {
     (async () => {
-      const result = await fetch(
-        "http://localhost:5000/api/reviews/" + id
-      ).then((res) => res.json());
+      const result = await fetch("/api/reviews/" + id).then((res) =>
+        res.json()
+      );
 
       console.log(result);
       setFilterMeal(result);
@@ -20,7 +20,7 @@ export function Review() {
 
   function onSubmit() {
     async function fetchReview() {
-      await fetch("http://localhost:5000/api/reviews", {
+      await fetch("/api/reviews", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
