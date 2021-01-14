@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { NavLink, useParams } from "react-router-dom";
 
 export default function MealDisplay() {
   const [meal, setMeal] = useState([]);
@@ -15,9 +16,14 @@ export default function MealDisplay() {
     <>
       <p> Name of Meals</p>
 
-      <div>
+      <div className="mealName">
+        <p className="text"> Reserve Your MEAL</p>
         {meal?.map((item) => (
-          <li key={item.id}> {item.title}</li>
+          <div className="meal-list">
+            <NavLink to={"/meal-display/" + item.id}>
+              {item.title} ----------{item.price} dkk
+            </NavLink>
+          </div>
         ))}
       </div>
     </>

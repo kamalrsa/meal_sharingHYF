@@ -5,8 +5,8 @@ const knex = require("../database");
 router.get("/", async (request, response) => {
   try {
     // knex syntax for selecting things. Look up the documentation for knex for further info
-    const titles = await knex("meal").select("*");
-    response.json(titles);
+    const review = await knex("review").select("*");
+    response.json(review);
   } catch (error) {
     throw error;
   }
@@ -26,16 +26,12 @@ router.get("/:id", async (request, response) => {
 router.post("/", async (request, response) => {
   try {
     //console.log(request.body);
-    const meal = await knex("meal").select("*").insert(request.body);
-    /*  title: request.body.title,
-      description: request.body.description,
-      location: request.body.location,
-      when: new Date(),
-      max_reservations: request.body.max_reservations,
-      price: request.body.price,
-      created_date: new Date(), 
-  }); */
-    response.json(meal);
+    const result = await knex("review")
+      .select("*")
+
+      .insert(request.body);
+
+    response.send(result);
   } catch (error) {
     throw error;
   }
