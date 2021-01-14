@@ -19,7 +19,7 @@ export default function MealDisplay() {
       <div className="mealName">
         <p className="text"> Reserve Your MEAL</p>
         {meal?.map((item) => (
-          <div className="meal-list">
+          <div>
             <NavLink to={"/meal-display/" + item.id}>
               {item.title} ----------{item.price} dkk
             </NavLink>
