@@ -69,7 +69,7 @@ export function AddMeal() {
         ></input>
         <button onClick={onSubmit}> ADD MEAL</button>
       </form>
-      <img src="/public/pasta.jpeg"></img>
+      <img src="/public/pasta.png"></img>
     </div>
   );
 }
