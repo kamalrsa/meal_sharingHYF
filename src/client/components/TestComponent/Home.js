@@ -8,9 +8,10 @@ export default function Home() {
       <style>{"body { background-color:  #D8BFD8; }"}</style>
       <div>
         <p className="mealName">
-          Meal_Sharing APP is a open platform Application and its free of Cost
-          where you can share your meal and You can see reservation and reviews
-          about your meal. Enjoy here by adding your meal. <br></br> <br></br>
+          Meal_Sharing APP is a open platform Application Where you can add your
+          Meal with price and description without any cost. Customer will make
+          reservation and reviews about your meal. Enjoy here by adding your
+          meal. <br></br> <br></br>
           <img src={img} alt height="400" width="600"></img>
         </p>
       </div>
