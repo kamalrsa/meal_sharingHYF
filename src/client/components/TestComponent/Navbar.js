@@ -41,12 +41,12 @@ export default function Navbar() {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="total-reviews">
-                  <span className="fa fa-address-card fa-lg"></span>TotalReview
+                <a className="nav-link" href="give-reviews">
+                  <span className="fa fa-address-card fa-lg"></span>GiveReview
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <a className="nav-link" href="./contact">
                   <span className="fa fa-address-card fa-lg"></span>Contact
                 </a>
               </li>

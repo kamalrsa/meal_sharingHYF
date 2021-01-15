@@ -5,27 +5,12 @@
   margin-top: 80px;
   width: 100%;
 }
-/* html {
-  background-image: url("./../assets/images/shrimp.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-} */
-/* .meal-list {
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(4, 1fr);
-  flex-wrap: wrap;
-  width: 100%;
-  height: 500px;
-  overflow: auto;
-} */
+
 .meal-list {
-  justify-content: space-between;
-  flex-direction: row;
-  border: 10px solid #41403f;
-  border-radius: 30px;
+  border: 1px solid #41403f;
+
   padding: 20px;
-  box-shadow: 5px 5px 8px #994828;
+  box-shadow: 5px 5px 8px #e4490c;
   margin-bottom: 5px;
   margin-top: 10px;
   line-height: 25px;
@@ -36,9 +21,10 @@
   align-items: center;
   font-size: 30px;
 }
-.first_img {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
+.box {
+  height: 50px;
+  width: 600px;
+  justify-content: space-between;
+  background-color: rgb(97, 80, 107);
+  color: #fff;
 }

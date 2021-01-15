@@ -87,42 +87,6 @@ export function Reservation() {
           <h1>{filterMeal.title}</h1>
         </form>
       </div>
-      {/* <div className="mealName">
-    
-      <form className="form-group row">
-          <label>ReservationID</label>
-        <input
-          type="text"
-          value={reservationID}
-          onChange={(e) => setReservationID(e.target.value)}
-        ></input> 
-        <label className="col-md-2 col-form-label">NumberOfGuest</label>
-        <div class="col-md-10">
-          <input
-            type="text"
-            value={guest}
-            onChange={(e) => setGuest(e.target.value)}
-          ></input>
-        </div>
-        <label className="col-md-2 col-form-label">MealID</label>
-        <div class="col-md-10">
-          <input
-            type="text"
-            value={mealID}
-            onChange={(e) => setMealID(e.target.value)}
-          ></input>
-        </div>
-        <div className="col-md-10">
-          <label className="col-md-2 col-form-label">Date</label>
-          <input
-            type="text"
-            value={date}
-            onChange={(e) => setDate(e.target.value)}
-          ></input>
-        </div>
-        <button conClick={onSubmit}> Reserve</button>
-      </form>
-    </div>  */}
     </div>
   );
 }

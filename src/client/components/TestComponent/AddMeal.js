@@ -31,45 +31,54 @@ export function AddMeal() {
   return (
     <div className="mealName">
       <form>
-        <label className="form-group row">Meal Name</label>
+        <label>Meal Name</label> <br></br>
         <input
           type="text"
           value={mealName}
           onChange={(e) => setMealName(e.target.value)}
-        ></input>
-        <label className="col-md-2 col-form-label">Description</label>
+        ></input>{" "}
+        <br></br>
+        <label>Description</label> <br></br>
         <input
           type="text"
           value={desc}
           onChange={(e) => setDesc(e.target.value)}
-        ></input>
-        <label className="col-md-2 col-form-label">Location</label>
+        ></input>{" "}
+        <br></br>
+        <label>Location</label>
+        <br></br>
         <input
           type="text"
           value={location}
           onChange={(e) => setLocation(e.target.value)}
         ></input>
-        <label className="col-md-2 col-form-label">Price</label>
+        <br></br>
+        <label>Price</label>
+        <br></br>
         <input
           type="text"
           value={price}
           onChange={(e) => setPrice(e.target.value)}
         ></input>
-        <label className="col-md-2 col-form-label">Maxs_reservation</label>
+        <br></br>
+        <label>Maxs_reservation</label>
+        <br></br>
         <input
           type="text"
           value={reservation}
           onChange={(e) => setReservation(e.target.value)}
         ></input>
-        <label className="col-md-2 col-form-label">Date</label>
+        <br></br>
+        <label>Date</label>
+        <br></br>
         <input
           type="text"
           value={date}
           onChange={(e) => setDate(e.target.value)}
         ></input>
+        <br></br>
         <button onClick={onSubmit}> ADD MEAL</button>
       </form>
-      <img src="/public/pasta.png"></img>
     </div>
   );
 }

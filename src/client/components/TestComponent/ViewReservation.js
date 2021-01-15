@@ -13,13 +13,15 @@ export default function ViewReservation() {
 
   return (
     <>
-      <p className="mealName"> Reservations</p>
+      <p className="mealName text"> Total Reservations</p>
 
       <div>
         {reservation?.map((item) => (
-          <li key={item.meal_id}>
-            {item.title} {item.total_guest}
-          </li>
+          <div className="meal-list">
+            <li key={item.meal_id}>
+              {item.title} >>>>>>Total Guest:{item.total_guest}
+            </li>
+          </div>
         ))}
       </div>
     </>

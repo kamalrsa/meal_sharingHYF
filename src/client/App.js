@@ -8,9 +8,10 @@ import { AddMeal } from "./components/TestComponent/AddMeal";
 import ViewReservation from "./components/TestComponent/ViewReservation";
 import Navbar from "./components/TestComponent/Navbar";
 import { Reservation } from "./components/TestComponent/Reservation";
-import TotalReview from "./components/TestComponent/TotalReview";
 import { Review } from "./components/TestComponent/Review";
 import Home from "./components/TestComponent/Home";
+import GiveReview from "./components/TestComponent/GiveReview";
+import Contact from "./components/TestComponent/Contact";
 
 function App() {
   return (
@@ -33,15 +34,18 @@ function App() {
         <Route exact path="/meal-display">
           <MealDisplay></MealDisplay>
         </Route>
-        <Route exact path="/total-reviews">
-          <TotalReview></TotalReview>
+        <Route exact path="/give-reviews">
+          <GiveReview></GiveReview>
         </Route>
 
         <Route exact path="/meal-display/:id">
           <Reservation></Reservation>
         </Route>
-        <Route exact path="/total-reviews/:id">
+        <Route exact path="/give-reviews/:id">
           <Review></Review>
+        </Route>
+        <Route exact path="/contact">
+          <Contact></Contact>
         </Route>
       </Router>
     </>
