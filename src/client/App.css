@@ -28,3 +28,10 @@
   background-color: rgb(97, 80, 107);
   color: #fff;
 }
+.navbar-dark {
+  background-color: #512da8;
+}
+body {
+  padding: 50px 0px 0px;
+  z-index: 0;
+}
