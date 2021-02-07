@@ -1,5 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { NavLink } from "react-router-dom";
 
 export default function Navbar() {
   return (
@@ -14,41 +15,41 @@ export default function Navbar() {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <a className="navbar-brand" href="#">
+          <NavLink className="navbar-brand" to="#">
             MealSharingApp
-          </a>
+          </NavLink>
           <div className="collapse navbar-collapse" id="Navbar">
             <ul className="navbar-nav mr-auto">
               <li className="nav-item">
-                <a className="nav-link" href="./home">
+                <NavLink className="nav-link" to="./home">
                   <span className="fa fa-info"></span>Home
-                </a>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="./meal-display">
+                <NavLink className="nav-link" to="./meal-display">
                   <span className="fa fa-info fa-lg"></span>Meal
-                </a>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="add-meal">
+                <NavLink className="nav-link" to="add-meal">
                   <span className="fa fa-address-card fa-lg"></span>AddMeal
-                </a>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="reservation">
+                <NavLink className="nav-link" to="reservation">
                   <span className="fa fa-address-card fa-lg"></span>
                   ViewReservation
-                </a>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="give-reviews">
+                <NavLink className="nav-link" to="give-reviews">
                   <span className="fa fa-address-card fa-lg"></span>GiveReview
-                </a>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="./contact">
+                <NavLink className="nav-link" to="./contact">
                   <span className="fa fa-address-card fa-lg"></span>Contact
-                </a>
+                </NavLink>
               </li>
             </ul>
           </div>
